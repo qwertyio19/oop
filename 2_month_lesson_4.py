@@ -20,4 +20,38 @@ class BankTransfer(PaymentMethod):
 payments = [CreditCard(),  PayPal(), BankTransfer()]
 
 for payment in payments:
-    print(payment.pay(input("Введите сумму: ")))
+    print(payment.pay(1000))
+
+
+
+# class Cat:
+#     def __init__(self, name, preferences):
+#         self.name = name
+#         self.preferences = preferences
+        
+#     def info(self):
+#         print(f"Я кот. Меня зовут {self.name}. Мне {self.preferences} года")
+        
+#     def make_sound(self):
+#         print("мяу")
+        
+        
+# class Dog:
+#     def __init__(self, name, preferences):
+#         self.name = name
+#         self.preferences = preferences
+        
+#     def info(self):
+#         print(f"Я собака. Меня зовут {self.name}. Мне {self.preferences} года")
+        
+#     def make_sound(self):
+#         print("гаф")
+        
+        
+
+# cat = Cat("Tom", 2)
+# dog = Dog("Muhtar", 3)
+
+# for animal in(cat, dog):
+#     animal.info()
+#     animal.make_sound()
